@@ -1,0 +1,20 @@
+# Ignore virtual environments
+venv/
+env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+db.sqlite3
+/static/
+/media/
+
+# Environment variables
+.env
+
+# MacOS/Linux system files
+.DS_Store
