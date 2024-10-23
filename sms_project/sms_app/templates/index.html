@@ -36,8 +36,9 @@
                     key: key,
                     msisdn: msisdn,
                     message: message,
+                    message: message,
                     sender_id: "Test",
-                    callback_url: "https://9024-197-251-147-210.ngrok-free.app/callback/"
+                    callback_url: " https://36c3-197-251-147-210.ngrok-free.app/callback/"
                 };
                 
                 $.ajax({
@@ -73,8 +74,7 @@
                             <p><strong>Status:</strong> ${callbackData.status || "No Data"}</p>
                             <p><strong>Timestamp:</strong> ${callbackData.timestamp || "No Data"}</p>
                             <p><strong>Network:</strong> ${callbackData.network || "No Data"}</p>
-                            <p><strong>Submit Date:</strong> ${callbackData.submit_date || "No Data"}</p>
-                            <p><strong>Delivery Date:</strong> ${callbackData.deliv_date || "No Data"}</p>
+                           
                         `);
                     },
                     error: function(error) {
@@ -83,8 +83,8 @@
                 });
             }
 
-            // Polling to fetch the latest response every 5 seconds
-            setInterval(fetchLatestCallback, 5000);
+            // Polling to fetch the latest response every 2 seconds
+            setInterval(fetchLatestCallback, 2000);
         });
     </script>    
 </body>
